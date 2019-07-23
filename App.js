@@ -92,6 +92,7 @@ export default class App extends React.Component {
     return (
       <FlatList style={styles.container}
                 renderItem={({ item }) => this.renderItem(item)}
+                keyExtractor={(item) => item.name}
                 data={this.fruits}
       />
     );
